@@ -1,0 +1,54 @@
+.contenedor1{
+   background-color: #82c9c9;
+   margin: 30px;
+   
+
+}
+
+body{
+   background-color: antiquewhite;
+
+
+}
+
+h1{
+   color: blue;
+   font-size: xx-large;
+
+}
+h2{
+   color: brown;
+   text-align: center;
+
+}
+
+p{
+   color: darkgreen;
+   margin-right: 670px;
+   text-align: justify;
+
+}
+img{
+   height: 650x;
+   width: 670px;
+
+}
+
+
+.tituloh1{
+   color: aqua;
+
+}
+
+.estiloparrafo2{
+
+   color: darkred;
+   margin-left: 200px;
+   font-size: x-small;
+   border: 1px solid yellow;
+   padding: 50px;
+
+}
+
+
+

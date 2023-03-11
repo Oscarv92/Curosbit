@@ -1,0 +1,22 @@
+como desplegar en Heroku
+
+link: https://dashboard.heroku.com/apps/app-front-jefes-practica/deploy/heroku-git
+
+1. en la consola de visual ingresa al codigo: heroku login
+"si no lo reconoce entonces antes debe ingresar el siguiente codigo de instalacion: npm i -g heroku
+
+2. debe ingresar al proyecto con: cd nombreProyecto
+
+3. ingresal el codigo: git init
+
+4. ingresar el comando que da heroku: heroku git: remote -a app-nombreApp
+
+5. adicionar todos los archivos: git add .
+"siempre debe verificar que este el archivo .gitignore con el contenido "node_modules""
+
+6. git commit -am "comentarios personales"
+
+7. git push heroku master
+
+8. hacia las ultimas lineas se encuentra la url a tomar del backend o del frontend
+"ejemplo:     "remote:        https://app-nombreApp.herokuapp.com/ deployed to Heroku""

@@ -1,0 +1,71 @@
+body{
+
+    background-color: aqua;
+    
+}
+
+h1{
+
+    text-align: center;
+    font-size: xx-large;
+
+}
+h3{
+
+    text-align: center;
+}
+
+.reportnopagina1{
+
+    font-size: x-large;
+    color: #1e1e81;
+
+}
+
+.imagen2{
+
+    margin: auto;
+    height: 650x;
+    width: 670px;
+    font-size: xx-large;
+    text-align: center;
+
+}
+
+.imagen3{
+
+    margin: auto;
+    height: 850x;
+    width: 270px;
+    text-align: justify;
+
+}
+
+.parrafo2{
+
+    text-align: justify;
+    text-align: center;
+    font-size: xx-large;
+    color: red;
+
+}
+
+.imagen4{
+
+    margin: auto;
+
+}
+
+.parrafo3{
+
+    text-align: justify;
+    font-size: xx-large;
+    color: purple;
+
+}
+
+.pasopagina3{
+    font-size: x-large;
+    color: #1e1e81;
+
+}

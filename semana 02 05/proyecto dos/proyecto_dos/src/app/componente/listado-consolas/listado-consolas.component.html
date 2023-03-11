@@ -1,0 +1,14 @@
+<table>
+    <tr>
+        <th>Consola</th>
+        <th>Año de lanzamiento</th>
+        <th>Precio</th>
+    </tr>
+    <tbody *ngFor="let i of consolas">
+        <tr>
+            <td>{{i.marca |uppercase}}</td>
+            <td>{{i.anio}}</td>
+            <td>{{i.precio |currency}}</td>
+        </tr>
+    </tbody>
+</table>

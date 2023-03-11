@@ -1,0 +1,36 @@
+body{
+    background-color: aquamarine;
+}
+
+h1{
+    text-align: center;
+   
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+.imagen1{
+
+    margin: auto;
+    width: 380px;
+    
+}
+.parrafo1{
+    margin: 200px;
+    text-align: justify;
+    font-size: x-large;
+    color: rgb(150, 111, 61);
+
+}
+
+.pasopagina2{
+    font-size: x-large;
+    color: #1e1e81;
+
+}

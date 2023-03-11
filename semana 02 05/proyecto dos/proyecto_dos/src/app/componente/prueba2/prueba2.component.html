@@ -1,0 +1,59 @@
+<h1>{{titulo}}</h1>
+
+<h3>Nombre con pipe mayuscula: {{nombrePrueba |uppercase}}</h3>
+<h3>Nombre con pipe mayuscula: {{nombrePrueba |lowercase}}</h3>
+
+<h4>Año de lanzamiento: {{anioLanzamiento | date}}</h4>
+<h4>Año de lanzamiento: {{anioLanzamiento | date: "dd-MM-yy"}}</h4>
+<h4>Año de lanzamiento: {{anioLanzamiento | date: "dd-MMMM-yyyy"}}</h4>
+
+<h4>Precio de consolsas: {{precio |currency}}</h4>
+<hr>
+<hr>
+
+<div *ngIf="!consolas">
+    <img src="https://hackernoon.com/images/0*3IFEy-hfoIpgFjBl.gif" alt="loading">
+</div>
+
+<div *ngIf="consolas.length===0">
+    <h1>No hay consolsas</h1>
+</div>
+
+<div *ngIf="consolas.length > 0">
+    <h1>Si hay datos</h1>
+
+    <div *ngFor="let i of consolas">
+        <h5>Tipo: {{i.marca |uppercase}}</h5>
+        <h5>Año de lanzamiento: {{i.anio}}</h5>
+        <h5>Valor de compra: {{i.precio |currency}}</h5>
+    </div>
+    <hr>
+    <hr>
+    <ul *ngFor="let i of consolas">
+        <li>Tipo: {{i.marca |uppercase}}</li>
+        <li>Año de lanzamiento: {{i.anio}}</li>
+        <li>Valor de compra: {{i.precio |currency}}</li>
+    </ul>
+
+    <hr>
+    <hr>
+
+    <table>
+        <tr>
+            <th>Consola</th>
+            <th>Año de lanzamiento</th>
+            <th>Precio</th>
+        </tr>
+        <tbody *ngFor="let i of consolas">
+            <tr>
+                <td>{{i.marca |uppercase}}</td>
+                <td>{{i.anio}}</td>
+                <td>{{i.precio |currency}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<!-- tema pendiente -->
+<app-listado-consolas [consolas]="consolas2"></app-listado-consolas>

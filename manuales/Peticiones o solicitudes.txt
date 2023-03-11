@@ -1,0 +1,4 @@
+Get => Obtener
+Post => Crear
+Put => Actualizar
+Delete => Eliminar

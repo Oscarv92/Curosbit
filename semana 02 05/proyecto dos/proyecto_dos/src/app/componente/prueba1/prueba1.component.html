@@ -1,0 +1,35 @@
+<h1>Soy el componente prueba 1</h1>
+<h3>Prueba de interpolación: {{nombre}}</h3>
+
+<hr>
+
+<h3>Nombre desde interpolación: {{nombre}}</h3>
+<h3>Edad desde interpolación: {{edad}}</h3>
+<a href="https://sweetalert2.github.io/">{{edad}}</a>
+
+<hr>
+
+<h3>prueba logica: {{2+2}}</h3>
+
+<hr>
+
+<ul>
+    <li>{{pasatiempo}}</li>
+</ul>
+
+<hr>
+
+<ul *ngFor="let i of pasatiempo">
+    <li>{{i}}</li>
+</ul>
+
+<hr>
+
+<p *ngIf="edad>=18;else menor">Es mayor de edad</p>
+
+<ng-template #menor>
+    <p>Es menor de edad</p>
+</ng-template>
+
+<hr>
+<button (click)="receso()">Click</button>

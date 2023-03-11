@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3 m-3" *ngFor="let item of datosApi | paginate: { itemsPerPage: 6, currentPage: pages }">
+            <div class="card" style="height: 600px;">
+                <img src="{{item.img}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h1 class="card-title">{{item.name}}</h1>
+                    <p class="card-text">{{item.occupation}}</p>
+                    <a class="btn btn-primary" (click)="pruebaEvento(item.portrayed)">Obtener mas información</a>
+                </div>
+            </div>
+        </div>
+        <pagination-controls (pageChange)="pages = $event"></pagination-controls>
+    </div>
+</div>

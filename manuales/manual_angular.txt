@@ -1,0 +1,61 @@
+**Manual Angular**
+
+Primero revisar la version:
+
+ng version
+**si no aparece nada entonces procedemos con el siguiente comando**
+
+**instalar de manera global Angular**
+nota:esto solo se hace una vez
+npm install -g @angular/cli
+
+**Para crear un proyecto en Angular vamos a ejecutar el siguiente comando**
+ng new primer_proyecto_angular
+
+**ahora debemos ingresar al proyecto**
+cd primer_proyecto_angular
+
+**ahora la prueba de fuego, ejecutar el proyecto**
+ng serve
+
+**para detener el proceso se realiza con:**
+ctl+c
+
+revisar el componente app, recordemos que ahi estan
+los archivos pricipales del proyecto,
+vamos a limipiar el app.componet.html.
+**nota: no abrir con open live serve, abrir con la url que tenga angular**
+
+*instalar bootstrap
+npm install bootstrap
+*se debe importar la ruta en angular.json
+ubicamos la linea de los style y scrips
+y pegamos lo siguiente:
+css:
+"node_modules/bootstrap/dist/css/bootstrap.min.css"
+js:
+"node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+css iconos bootstrap:
+npm i bootstrap-icons
+"node_modules/bootstrap-icons/font/bootstrap-icons.css"
+
+**instalar material**
+ng add @angular/material
+
+
+**crear componentes**
+comando:
+ng g c componente/barra --skip-tests=true
+ng generate component componente/barra
+
+<router-outlet><router-outlet>
+
+**crear rutas**
+{path:'cards',component:CardsComponent}
+
+Crear servicios en Angular**
+ng generate service nombre-componente --module=app
+ng g s servicios/api --skip-tests=true
+
+Instalar sweetalert2
+npm install sweetalert2

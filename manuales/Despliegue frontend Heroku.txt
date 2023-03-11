@@ -1,0 +1,58 @@
+Manual despliegue frontend Heroku
+
+Crear app en Heroku***   			
+
+Usar la pagina guia 	****	https://dev.to/gedgonz/haciendo-deploy-de-una-app-en-angular-a-heroku-16ji
+
+ingresar en scripts***
+"start": "node src/index.js"
+en el package.json del Backend
+
+ingresar el comando***
+heroku login
+
+Ingresar el link de mmongo atlas en el database***
+
+Hacer el despliegue de Heroku en el backend***
+
+Copiar la url que se genero en el frontend**
+"environment"
+
+Instalar express**
+"Normalmente ya la tenemos instalado"
+
+editar package.json con lo siguiente:***
+"scripts": {
+	"start": "node server.js"
+    ...
+    "heroku-postbuild": "ng build --prod"
+  },
+  "engines": {
+    "node": "16.14.2",
+    "npm": "8.5.0"
+  },
+  
+"el node y el npm siempre deben llevar las versiones que se esten manejando en el momento, para saber cuales son se corren
+los comandos: "node --version" y "npm --version"
+  
+Crear un archivo llamado server.js y pegar dentro:***
+const path = require('path');
+const express = require('express');
+const app = express();
+
+// Serve static files
+app.use(express.static(__dirname + '/dist/fornt_jefes'));
+
+// Send all requests to index.html
+app.get('/*', function(req, res) {
+    res.sendFile(path.join(__dirname + '/dist/fornt_jefes/index.html'));
+});
+
+// default Heroku port
+app.listen(process.env.PORT || 5000);
+
+"cambiar el nombre del proyecto: ejemplo "fornt_jefes" por el que se este manejando"
+
+volver al package.jon y editar "start": "ng serve" por "start": "node server.js"***
+
+Desplegar el frontend en Heroku***

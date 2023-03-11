@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Clase 3</title>
+</head>
+<body>
+
+    <div class="nav">
+        <ul>
+            <li><a href="#lista">Inicio</a></li>
+            <li><a href="#tabla">Tabla</a></li>
+            <li><a href="#formulario">Formulario</a></li>
+
+        </ul>
+
+    </div>
+
+    <div id="lista" class="lista-ordenada">
+        <h4>Lista ordenada</h4>
+        <ol>
+            <li><a href="#">Google</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+
+        </ol>
+    </div>
+
+    <div class="lista-desordenada">
+        <h4>Lista desordenada</h4>
+        <ul>
+            <li><a href="#">Google</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+
+        </ul>
+
+    </div>
+
+    <hr>
+
+    <div id="tabla" class="tabla-1">
+        <h1>Tabla de personas</h1>
+
+        <table class="tabla-personas">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Email</th>
+        </tr>
+            
+        <tr>
+            <td>Oscar</td>
+            <td>Vasquez</td>
+            <td>oscvasquezl92@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>Marcela</td>
+            <td>Romero</td>
+            <td>yumromero@gmail.com</td>
+
+        </tr>
+        </table>
+
+    </div>
+
+    <hr>
+
+    <div id="formulario" class="formulario">
+        <h1>Formulario</h1>
+        <form action="">
+            <label for="nombre">Nombre:</label> <br>
+            <input id="nombre" name="nombre" type="text" placeholder="Digite su nombre" required> <br>
+
+            <label for="apellido">Apellido:</label> <br>
+            <input id="apellido" name="apelldio" type="text" placeholder="Digite su apellido" required> <br>
+        
+            <label for="edad">Edad:</label> <br>
+            <input id="edad" name="edad" placeholder="Digite su edad" required type="Number"> <br>
+
+            <label for="fecha_nacimiento">Fecha de Nacimiento</label> <br>
+            <input id="fecha_nacimiento" name="fecha_nacimiento" required type="date"> <br>
+            
+            <h3>Genero</h3>
+            <input id="m" name="genero" type="radio">
+            <label for="m">Masculino</label> <br>
+
+            <input id="f" name="genero" type="radio">
+            <label for="f">Femenino</label> <br>
+
+            <h3>Selecione sus pasatiempos</h3> <br>
+
+            <input id="leer" name="leer" type="checkbox">
+            <label for="leer">Leer</label>
+
+            <input id="nadar" name="nadar" type="checkbox">
+            <label for="nadar">nadar</label>
+
+            <input id="cantar" name="cantar" type="checkbox">
+            <label for="cantar">Cantar</label>
+
+            <h3>Seleccione su consola favorita</h3>
+            <select name="" id="">
+
+                <option value=""></option>
+                <option value="">PS5</option>
+                <option value="">Xbox</option>
+                <option value="">Nintendo</option>
+
+            </select>
+
+            <h3>Realice un comentario</h3>
+            <textarea name="comentario" id="comentario" cols="30" rows="10">
+
+            </textarea>
+
+            <br>
+            <input type="submit" value="Enviar">
+
+        </form>
+    </div>
+
+   
+    
+    
+</body>
+</html>
